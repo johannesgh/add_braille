@@ -95,9 +95,8 @@ def add_loop(old_name="./AnonymousPowerline.ttf",
         font[char_name].draw(pen)
         font[char_name].width = 1118
         font[char_name].vwidth = 1305
-        # font[char_name].stroke("circular", 0.5 * dot_radius, "round")
         pen = None
-        if i == 7:
+        if i == 256: # This is for testing. To see the output, make it a lower integer.
             print(font["A"])
             print(font["A"].layers["Fore"])
             print(font["A"].anchorPoints)
